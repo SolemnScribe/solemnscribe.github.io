@@ -1,0 +1,28 @@
+title: SolemnScribe
+tagline: "Development notes, open source, and labor rights"
+description: "A developer's corner on open source software, labor rights, and building things that matter."
+url: "https://solemnscribe.github.io"
+baseurl: ""
+
+author:
+  name: SolemnScribe
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: feed.xml
